@@ -1,11 +1,15 @@
-<h1>Stupid Coach Inc</h1>
+<h1>Stupid Coaching</h1>
 
-<%= "#{@question}" %><br>
-<i><%= "-You" %></i><br>
+<div id="question" class="card">
+  <%= "#{@question}" %><br>
+  <i><%= "-You" %></i><br>
+</div>
 <br>
 
-<%= "#{@answer}" %><br>
-<i><%= "-Your coach" %></i><br>
+<div id="answer" class="card">
+  <%= "#{@answer}" %><br>
+  <i><%= "-Your coach" %></i><br>
+</div>
 <br>
 
 <%= link_to 'Ask a new question', ask_path %>
